@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.TITLES {
+  margin: 0;
+  font-size: 7vh;
+  color: white;
+}
+
+.TITLES-BLOCK {
+  margin: 0;
+  font-size: 2.5vh;
+  color: #aaa;
+  padding: 2vh;
+}
+
+hr {
+  width: 40vh;
+}
+
+/* PARALLAX WINDOWS */
+
+.top {
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.clyster {
+  height: 30vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staffs {
+  height: 30vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servers {
+  height: 30vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* CONTENT FRAME */
+
+/* TOP */
+
+#topBlock {
+  width: 100%;
+  background-color: rgba(000, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#topBlock img {
+  width: 18vh;
+  height: 18vh;
+  padding-top: 2vh;
+}
+
+#topBlock p {
+  margin: 0;
+  font-size: 4vh;
+  color: #0C707F;
+  padding-bottom: 2vh;
+}
+
+/* NAVBAR */
+
+#navBar {
+  height: 6vh;
+  background-color: #0C707F;
+  display: flex;
+  justify-content: center;
+}
+
+#navs {
+  height: 6vh;
+  width: 40%;
+  display: flex;
+}
+
+#navs a {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.navs h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.4vh;
+}
+
+#navs a:hover {
+  background-color: white;
+}
+
+#navs a:hover h1 {
+  color: #0C707F;
+}
+
+/* STATUS */
+
+#Status {
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CLYSTER */
+
+#About {
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* STAFFS */
+
+#Staffs {
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SERVERS */
+
+#Servers {
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+
+#footer {
+  height: 20vh;
+  background-color: #0C707F;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerText {
+  margin: 0;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* COPY IP */
+
+#copiedIP {
+  width: 45vh;
+  height: 30vh;
+  background-color: #f5f5f5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10pt;
+  left: 50%;
+  margin-left: -23vh;
+  z-index: 100;
+}
+
+#copiedIP {
+  display: none;
+}
+
+#copiedIP p {
+  margin: 0;
+}
+
+#copiedCheck {
+  font-size: 12vh;
+  color: green;
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#copiedText {
+  width: 100%;
+  font-size: 5vh;
+  color: #777;
+  display: flex;
+  justify-content: center;
+}
+
+#copiedText2 {
+  width: 100%;
+  font-size: 2vh;
+  color: #aaa;
+  display: flex;
+  margin-top: 20pt;
+  justify-content: center;
+}
+
+.checkmark {
+  width: 14vh;
+  margin: 0 auto;
+  padding-top: 4vh;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 2s ease-in-out;
+  -webkit-animation: dash 2s ease-in-out;
+}
+
+.spin {
+  animation: spin 2s;
+  -webkit-animation: spin 2s;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+#copiedIP p {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  animation: text .5s linear .4s;
+  -webkit-animation: text .4s linear .3s;
+}
+
+@-webkit-keyframes dash {
+ 100% {
+   stroke-dashoffset: 0;
+ }
+}
+
+@keyframes dash {
+ 0% {
+   stroke-dashoffset: 1000;
+ }
+ 100% {
+   stroke-dashoffset: 0;
+ }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+
+
+  @keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* PARTICLES */
