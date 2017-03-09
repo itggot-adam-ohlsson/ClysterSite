@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Archivo Black', sans-serif;
+  /*font-family: 'Archivo Black', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a, a:link, a:visited {
@@ -9,7 +10,7 @@ a, a:link, a:visited {
 
 .TITLES {
   margin: 0;
-  font-size: 7vh;
+  font-size: 5vh;
   color: white;
 }
 
@@ -21,7 +22,11 @@ a, a:link, a:visited {
 }
 
 hr {
-  width: 40vh;
+  width: 40vw;
+}
+
+.navClass {
+  background-color: white;
 }
 
 /* PARALLAX WINDOWS */
@@ -60,10 +65,20 @@ hr {
 
 /* CONTENT FRAME */
 
+
 /* TOP */
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 
 #topBlock {
   width: 100%;
+  height: 40vh;
+  min-width: 600px;
   background-color: rgba(000, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -83,36 +98,61 @@ hr {
   margin: 0;
   font-size: 4vh;
   color: #0C707F;
-  padding-bottom: 2vh;
+}
+
+#downArrow {
+  width: 10vh;
+  height: 10vh;
+  background-color: rgba(0,0,0,0.15);
+  margin-top: 30vh;
+  border-radius: 50%;
+  border: solid white;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#downArrow i {
+  font-size: 5vh;
+  color: white;
 }
 
 /* NAVBAR */
 
 #navBar {
-  height: 6vh;
+  height: 50px;
   background-color: #0C707F;
   display: flex;
   justify-content: center;
 }
 
 #navs {
-  height: 6vh;
-  width: 40%;
+  height: 50px;
   display: flex;
+  justify-content: center;
 }
 
 #navs a {
   display: flex;
-  flex-grow: 1;
+  min-width: 120px;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+  transition: background-color 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.navs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navs h1 {
   margin: 0;
   color: white;
-  font-size: 1.4vh;
+  font-size: 15px;
+  margin: 0 16px 0 16px;
 }
 
 #navs a:hover {
@@ -126,59 +166,346 @@ hr {
 /* STATUS */
 
 #Status {
-  height: 30vh;
-  background-color: white;
+  height: 600px;
+  background-color: #212121;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#Status h1 {
+  color: white;
+}
+
+#slideshow {
+  margin: 50px;
+  position: relative;
+  width: 680px;
+  height: 340px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+}
+
+#slideshow > div {
+  position: absolute;
+}
+
+#slideshow img {
+  width: 680px;
+  height: 340px;
+}
+
+#slideshow p {
+  position: absolute;
+  right: -450px;
+  top: 10px;
+  color: white;
+  max-width: 400px;
+  margin-top: 80px;
+}
+
+#slideshow h1 {
+  position: absolute;
+  left: -350px;
+  top: 10px;
+  color: white;
+  max-width: 400px;
+  margin-top: 100px;
 }
 
 /* CLYSTER */
 
 #About {
-  height: 40vh;
+  height: 400px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#aboutContent {
+  margin: 50px;
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#aboutContent i {
+  font-size: 60px;
+}
+
+#aboutContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutContent h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#aboutContent p {
+  max-width: 250px;
+  text-align: center;
 }
 
 /* STAFFS */
 
 #Staffs {
-  height: 40vh;
-  background-color: white;
+  height: 100%;
+  background-color: #212121;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#Staffs h1 {
+  color: white;
+}
+
+#allStaffs {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.staffsTiles {
+  width: 180px;
+  height: 180px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px;
+  border: 4px outset;
+}
+
+#Staffs .staffsTiles h1 {
+  font-size: 15px;
+  color: #212121;
+}
+
+/* ALL HEADS */
+
+#aflame {
+  background-image: url(../img/aflame.png);
+  background-size: cover;
+}
+
+#strafe {
+  background-image: url(../img/strafe.png);
+  background-size: cover;
+}
+
+#redstone {
+  background-image: url(../img/redstone.png);
+  background-size: cover;
+}
+
+#lechay {
+  background-image: url(../img/lechay.png);
+  background-size: cover;
+}
+
+#jdsgames {
+  background-image: url(../img/jdsgames.png);
+  background-size: cover;
+}
+
+#pieced {
+  background-image: url(../img/pieced.png);
+  background-size: cover;
+}
+
+#amir {
+  background-image: url(../img/amir.png);
+  background-size: cover;
+}
+
+#adamsmc {
+  background-image: url(../img/adamsmc.png);
+  background-size: cover;
 }
 
 /* SERVERS */
 
 #Servers {
-  height: 40vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* FOOTER */
+#Servers .holdOver {
+  margin: 3vh 0 0 0;
+}
 
-#footer {
-  height: 20vh;
-  background-color: #0C707F;
+.games {
   display: flex;
-  justify-content: space-around;
+  height: 35vh;
+  background-color: white;
+  justify-content: center;
   align-items: center;
 }
 
+.serverTiles {
+  width: 20vw;
+  min-width: 200px;
+  height: 20vh;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+}
+
+.serverTilesNames {
+  width: 0;
+  min-width: 0;
+  height: 50px;
+  background-color: rgba(12,112,127,0.8);
+  margin-bottom: 2vh;
+  transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skewY(-2deg);
+}
+
+.serverTilesInfo {
+  display: none;
+  width: 25vw;
+  max-height: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.serverTilesNames h1 {
+  font-size: 2vh;
+  color: white;
+  font-family: sans-serif;
+}
+
+.serverTilesHover:hover .serverTilesNames {
+  width: 10vw;
+  min-width: 100px;
+  padding: 16px;
+}
+
+.serverTilesHover:hover {
+  opacity: 0.8;
+}
+
+.serverTilesClick {
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.InfoClick {
+  display: flex;
+}
+
+#ffa {
+  background-image: url(../img/ffa.png);
+}
+
+#faction {
+  background-image: url(../img/faction.png);
+}
+
+#arenapvp {
+  background-image: url(../img/arenapvp.png);
+}
+
+#uhc {
+  background-image: url(../img/uhc.png);
+}
+
+/* FOOTER */
+
+#footer {
+  height: 200px;
+  background-color: #0C707F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerTexts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  max-width: 1000px;
+  margin-left: 100px;
+}
+
 .footerText {
-  margin: 0;
-  font-size: 1.5vh;
+  padding: 0 56px 0 56px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   font-family: sans-serif;
+  border-right: 1px solid white;
+}
+
+#lastFooterText {
+  border: none;
+}
+
+.footerShop {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  margin-right: 100px;
+  padding: 0 56px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check_out {
+  color: #212121;
+}
+
+.shopButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.shopButton p {
+  padding: 16px 48px 16px 48px;
+  margin: 0;
+  color: white;
+}
+
+.shopButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* COPY IP */
@@ -187,6 +514,7 @@ hr {
   width: 45vh;
   height: 30vh;
   background-color: #f5f5f5;
+  box-shadow: 100px 0px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -308,5 +636,3 @@ hr {
     opacity: 1;
   }
 }
-
-/* PARTICLES */

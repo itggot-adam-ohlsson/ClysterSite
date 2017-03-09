@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Clyster Network&trade;</title>
+    <title>Clyster Network&trade; - Website</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
 
     <div id="contentFrame">
 
-
-
       <div id="top" class="top" data-parallax="scroll" data-image-src="./img/top.png">
         <div id="topBlock" class="ip" data-clipboard-text="mc.clyster.net">
-          <img class="logo" src="./img/logo.png" alt="ClysterLogo">
+          <img class="logo" src="./img/logoPS.png" alt="ClysterLogo">
           <h1 class="TITLES">CLYSTER NETWORK</h1>
           <p class="titles">MC.CLYSTER.NET</p>
         </div>
@@ -35,11 +35,15 @@
           <p id="copiedText">See you soon!</p>
           <p id="copiedText2">copied mc.clyster.net</p>
         </div>
+
+        <a href="#navs"><div id="downArrow">
+          <i class="material-icons">keyboard_arrow_down</i>
+        </div></a>
       </div>
 
       <div id="navBar">
         <div id="navs">
-          <a href="#top" id="navHome" onclick="navHome()">
+          <a href="#top" id="navHome">
             <div class="navs">
               <h1 id="navHomeTitle">HOME</h1>
             </div>
@@ -49,19 +53,19 @@
               <h1 id="navForumTitle">FORUM</h1>
             </div>
           </a>
-          <a href="#clyster" id="navClyster" onclick="navClyster()">
+          <a href="#clyster" id="navClyster">
             <div class="navs">
               <h1 id="navClysterTitle">CLYSTER</h1>
             </div>
           </a>
-          <a href="#staffs" id="navStaffs" onclick="navStaffs()">
+          <a href="#staffs" id="navStaffs">
             <div class="navs">
               <h1 id="navStaffsTitle">STAFFS</h1>
             </div>
           </a>
-          <a href="#servers" id="navServers" onclick="navServers()">
+          <a href="#servers" id="navServers">
             <div class="navs">
-              <h1 id="navServersTitle">SERVERS</h1>
+              <h1 id="navServersTitle">GAMES</h1>
             </div>
           </a>
           <a href="#" id="navShop">
@@ -73,8 +77,25 @@
       </div>
 
       <div id="Status">
-        <h1 class="TITLES-BLOCK">STATUS</h1>
+        <h1 class="TITLES-BLOCK">NEWS</h1>
         <hr>
+        <div id="slideshow">
+          <div>
+            <img src="./img/ffa.png">
+            <h1>FFA</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi eu posuere tempor. Maecenas tincidunt iaculis erat, a ultricies tortor venenatis sit amet. Mauris posuere erat felis, eget egestas elit finibus ac. Nullam et ligula mi. Ut a dui magna. Maecenas a urna eu diam sagittis sollicitudin eget quis.</p>
+          </div>
+          <div>
+            <img src="./img/arenapvp.png">
+            <h1>ArenaPvP</h1>
+            <p>Lorem ipsum dolor sitelit. Curabitur fringilla nisi eu posuere tempor. Maecenas tincidunt iaculis erat, a ultricies tortor venenatis sit amet. Mauris posuere erat felis, eget egestas elit finibus ac. Nullam et ligula mi. Ut a dui magna. Maecenas a urna eu diam sagittis sollicitudin eget quis.</p>
+          </div>
+          <div>
+            <img src="./img/uhc.png">
+            <h1>UHC</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi eu posuere tempor. ortor venenatis sit amet. Mauris posuere erat felis, eget egestas elit finibus ac. Nullam et ligula mi. Ut a dui magna. Maecenas a urna eu diam sagittis sollicitudin eget quis.</p>
+          </div>
+        </div>
       </div>
 
       <div id="clyster">
@@ -84,33 +105,144 @@
         <div id="About">
           <h1 class="TITLES-BLOCK">CLYSTER</h1>
           <hr>
+          <div id="aboutContent">
+            <div>
+              <i class="material-icons">dns</i>
+              <h1>Servers</h1>
+              <p>
+                Our servers provided by OVH are the most stable, fast and sustainable ones online. Dedicated servers for
+                experienced users within an affordable price range.
+              </p>
+            </div>
+            <div>
+              <i class="material-icons">people</i>
+              <h1>Community</h1>
+              <p>
+                We have the best community of all Minecraft Networks out there. Our staff team will help everyone with everything. Join us now and meet new friends.
+              </p>
+            </div>
+            <div>
+              <i class="material-icons">videogame_asset</i>
+              <h1>Games</h1>
+              <p>All game modes are custom coded for you to have the best gaming experience. Scroll down to the last section where you can find all of our game modes.</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="staffs">
         <div class="staffs" data-parallax="scroll" data-image-src="./img/staffs.png">
-          <h1 class="TITLES">STAFFS</h1>
+          <h1 class="TITLES">STAFF TEAM</h1>
         </div>
         <div id="Staffs">
-          <h1 class="TITLES-BLOCK">STAFFS</h1>
+          <h1 class="TITLES-BLOCK">STAFF TEAM</h1>
           <hr>
+          <div id="allStaffs">
+            <div class="staffsTiles" id="aflame">
+              <h1>Founder | AflameGame</h1>
+            </div>
+            <div class="staffsTiles" id="strafe">
+              <h1>Sr Admin | Strqfe_</h1>
+            </div>
+            <div class="staffsTiles" id="redstone">
+              <h1>Sr Admin | Redstonebiten</h1>
+            </div>
+            <div class="staffsTiles" id="lechay">
+              <h1>Mod | LeChay</h1>
+            </div>
+            <div class="staffsTiles" id="jdsgames">
+              <h1>Mod | JdsgamesYt</h1>
+            </div>
+            <div class="staffsTiles" id="pieced">
+              <h1>Mod | Pieced</h1>
+            </div>
+            <div class="staffsTiles" id="amir">
+              <h1>Head Builder | Amir_Saran</h1>
+            </div>
+            <div class="staffsTiles" id="adamsmc">
+              <h1>Webdeveloper | AdamsMC</h1>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="servers">
         <div class="servers" data-parallax="scroll" data-image-src="./img/servers.png">
-          <h1 class="TITLES">SERVERS</h1>
+          <h1 class="TITLES">GAMES</h1>
         </div>
         <div id="Servers">
-          <h1 class="TITLES-BLOCK">SERVERS</h1>
+          <h1 class="TITLES-BLOCK">GAMES</h1>
           <hr>
+          <h1 class="holdOver">Hover over or click the pictures!</h1>
+          <div class="games">
+            <div class="serverTiles serverTilesHover" id="ffa" onclick="serverTilesFFA()">
+              <div class="serverTilesNames">
+                <h1>FFA</h1>
+              </div>
+              <div class="serverTilesInfo" id="ffaInfo">
+                <p>
+                  If you are one of those PvP addicted ones, do not fear to
+                  jump down in the no going back Free For All arena to compete
+                  against all the other players on the network. Use your best
+                  strategies and kits to become the most godlike warrior in the world.
+                </p>
+              </div>
+            </div>
+            <div class="serverTiles serverTilesHover" id="faction" onclick="serverTilesFaction()">
+              <div class="serverTilesNames">
+                <h1>FACTION</h1>
+              </div>
+              <div class="serverTilesInfo" id="factionInfo">
+                <p>
+                  Gather your friends and create a faction, compete against
+                  other factions by finding their hidden base and blow it up.
+                  Become the most powerful one on the server and have a chance
+                  to win the honorable prize at the end of the season.
+                </p>
+              </div>
+            </div>
+            <div class="serverTiles serverTilesHover" id="arenapvp" onclick="serverTilesArenapvp()">
+              <div class="serverTilesNames">
+                <h1>ARENAPVP</h1>
+              </div>
+              <div class="serverTilesInfo" id="arenapvpInfo">
+                <p>
+                  Sign yourself up to a queue and be prepared to fight
+                  another player in the numerous of maps to choose from.
+                  Practice your battle skills and become the top 1vs1
+                  warrior across the entire network.
+                </p>
+              </div>
+            </div>
+            <div class="serverTiles serverTilesHover" id="uhc" onclick="serverTilesUHC()">
+              <div class="serverTilesNames">
+                <h1>UHC</h1>
+              </div>
+              <div class="serverTilesInfo" id="uhcInfo">
+                <p>
+                  Along with lots of other player, get thrown into an open world
+                  with a border miles away. Gather resources underground and become
+                  the most powerful warrior in the world to be the last one standing
+                  and win but be aware, natural regeneration is off.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <footer id="footer">
-        <p class="footerText">&copy; Clyster Network 2016</p>
-        <p class="footerText">support@clyster.net</p>
-        <p class="footerText">Made by Adam</p>
+        <div class="footerTexts">
+          <p class="footerText">Clyster Network &copy;</p>
+          <p class="footerText">support@clyster.net</p>
+          <p class="footerText" id="lastFooterText">mc.clyster.net</p>
+        </div>
+        <div class="footerShop">
+          <p class="check_out">Check out our amazing shop with lots of offers!</p>
+          <a href="#"><div class="shopButton">
+            <p>SHOP</p>
+          </div></a>
+        </div>
       </footer>
 
     </div>
