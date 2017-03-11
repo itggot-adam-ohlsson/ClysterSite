@@ -276,6 +276,7 @@ hr {
   align-items: center;
   max-width: 1000px;
   flex-wrap: wrap;
+  margin: 50px;
 }
 
 .staffsTiles {
@@ -292,6 +293,13 @@ hr {
 #Staffs .staffsTiles h1 {
   font-size: 15px;
   color: #212121;
+  background-color: white;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 /* ALL HEADS */
